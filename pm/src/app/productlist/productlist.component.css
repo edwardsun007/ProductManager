@@ -1,0 +1,24 @@
+.wrapper{
+    border:2px solid green;
+    border-radius: 5px;
+}
+
+.list{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2%;
+}
+
+.list >  img{
+    width: 100px;
+    height: 100px;
+}
+
+.btns > button{
+    color:white;
+    font-size: 1.2em;
+    background-color: skyblue;
+    width: 80px;
+    border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+div{
+    border:2px solid orange;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.links > a{
+    width: 25%;
+    display: inline-block;
+}

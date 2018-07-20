@@ -1,0 +1,9 @@
+.wrapper{
+    border:2px solid purple;
+    border-radius: 5px;
+}
+
+.links > a{
+    width: 25%;
+    display: inline-block;
+}

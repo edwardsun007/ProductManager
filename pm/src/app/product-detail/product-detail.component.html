@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <h3>Product Detail Component</h3>
+    <p>Edit this Product:</p>
+    <form (submit)="onUpdate(oneProduct._id)">
+        <div *ngIf="errorMsg" class="err">
+            <div *ngFor="let err of errorMsg">
+            <p>{{err}}</p>
+            </div>
+        </div> 
+        <label for="title">Product title:</label>
+        <input type="text" name="title" value="oneProduct.title" [(ngModel)]="oneProduct.title">
+        <label for="price">Product price:</label>
+        <input type="text" name="price" value="oneProduct.price" [(ngModel)]="oneProduct.price">
+        <label for="image">Product image url:</label>
+        <input type="text" name="image" value="oneProduct.image" [(ngModel)]="oneProduct.image">
+        <div class="btns">
+            <input type="submit" value="UPDATE" id="submit">
+            <button class="delete" (click)="onClickDelete(oneProduct._id)">DELETE</button>
+        </div>
+    </form>
+    
+</div>

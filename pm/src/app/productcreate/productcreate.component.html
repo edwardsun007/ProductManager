@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <h3>Create A New Product</h3>
+    <form (submit)="onCreate()">
+        <div *ngIf="errorMsg" class="err">
+          <div *ngFor="let err of errorMsg">
+          <p>{{err}}</p>
+          </div>
+        </div> 
+      <label for="title">Product Title</label>
+      <input type="text" name="title" [(ngModel)]="newProduct.title">
+      <label for="price">Price:</label>
+      <input type="text" name="price" [(ngModel)]="newProduct.price">
+      <label for="image">Image url:</label>
+      <input type="text" name="image" [(ngModel)]="newProduct.image">
+      <div class="btns">
+          <input type="submit" value="CREATE" id="submit">
+          <button class="cancel" [routerLink]="['/products/list']">Cancel</button>
+      </div>
+    </form>
+</div>
+
+

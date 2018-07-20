@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome To Product Manager
+  </h1>
+  <div class="links">
+      <a [routerLink] = "['home']">Home</a>
+      <a [routerLink] = "['products','list']">Product List</a>
+      <a [routerLink] = "['products','create']">Create New Product</a>
+      <a [routerLink] = "['products','details', 5]">Go to /products/details/5</a>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</div>
+
